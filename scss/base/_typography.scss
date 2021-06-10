@@ -1,8 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
+@use '../abstracts';
 
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
 $fjall: "Fjalla One", sans-serif;
 $open: "Open Sans", sans-serif;
 
 html {
   font-family: $open;
+}
+
+.one {
+  h1 {
+    font-size: 3.7rem;
+    font-family: $fjall;
+    color: abstracts.$ind;
+  }
+  p {
+    font-size: 1.25rem;
+    font-style: italic;
+  }
 }

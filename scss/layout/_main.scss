@@ -11,3 +11,24 @@ main {
 }
 
 //// Section One ///////
+
+.one__card {
+  background-color: abstracts.$silver;
+  position: relative;
+  &__text {
+    padding: 0 1rem;
+    p {
+      margin-bottom: 2rem;
+    }
+    a {
+      padding: 8px 10px;
+      background-color: abstracts.$mYellow;
+      width: 200px;
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.25rem;
+      text-align: center;
+    }
+  }
+}
