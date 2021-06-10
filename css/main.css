@@ -165,8 +165,30 @@ main {
 .one__card {
   background-color: #a4a5ae;
   position: relative;
+  height: 750px;
+  max-width: 400px;
+  margin: 15rem auto 0;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.one__card img {
+  position: absolute;
+}
+.one__card img.chef__img {
+  width: 90%;
+  z-index: 2;
+  top: -200px;
+  right: 0;
+}
+.one__card img.fern__img {
+  width: 82%;
+  z-index: 0;
+  top: -180px;
+  left: 0;
 }
 .one__card__text {
+  margin-top: auto;
   padding: 0 1rem;
 }
 .one__card__text p {
