@@ -82,4 +82,41 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
+header {
+  background-color: #465775;
+  padding-bottom: 0.5rem;
+}
+
+.header__wrap {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company__logo {
+  width: 300px;
+}
+
+nav {
+  width: 40px;
+  margin-top: -70px;
+  margin-bottom: 2rem;
+}
+
+.burger__menu .burger__menu__line {
+  background: white;
+  height: 4px;
+}
+.burger__menu .burger__menu__line + .burger__menu__line {
+  margin-top: 6px;
+}
+
+.header__line {
+  width: 100%;
+  height: 2px;
+  background: white;
+}
+
 /*# sourceMappingURL=main.css.map */
