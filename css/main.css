@@ -85,24 +85,47 @@ html {
 header {
   background-color: #465775;
   padding-bottom: 0.5rem;
+  padding-top: 1rem;
 }
 
 .header__wrap {
   width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 600px) {
+  .header__wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+}
 
 .company__logo {
-  width: 300px;
+  width: 200px;
+}
+@media (min-width: 600px) {
+  .company__logo {
+    width: 150px;
+  }
 }
 
 nav {
   width: 40px;
-  margin-top: -70px;
   margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+nav:hover {
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  nav {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 .burger__menu .burger__menu__line {

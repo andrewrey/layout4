@@ -2,25 +2,48 @@
 
 header {
   background-color: abstracts.$ind;
-  padding-bottom: 0.5rem;
+  padding: {
+    bottom: 0.5rem;
+    top: 1rem;
+  }
 }
 .header__wrap {
   width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include abstracts.mq(600px) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: {
+      bottom: 1rem;
+    }
+  }
 }
 
 .company__logo {
-  width: 300px;
+  width: 200px;
+  @include abstracts.mq(600px) {
+    width: 150px;
+  }
 }
 
 nav {
   width: 40px;
   margin: {
-    top: -70px;
     bottom: 2rem;
+    top: 1rem;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  @include abstracts.mq(600px) {
+    margin: {
+      bottom: 0;
+      top: 0;
+    }
   }
 }
 .burger__menu {
