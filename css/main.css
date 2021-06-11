@@ -155,7 +155,7 @@ nav:hover {
   background: white;
 }
 
-.section__wrap {
+.wrap {
   width: 80%;
   margin: 0 auto;
   max-width: 1200px;
@@ -163,20 +163,51 @@ nav:hover {
 }
 
 .one {
-  padding: 4rem 0;
+  padding: 6rem 0;
   border: 2px solid red;
+}
+
+.section__one__wrap {
+  position: relative;
+  z-index: 0;
+}
+.section__one__wrap::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 30px;
+  background-color: #ffe347;
+  position: absolute;
+  top: 20rem;
+  left: 0;
+}
+
+.fern {
+  width: 310px;
 }
 
 .chef__img {
   width: 300px;
+  position: absolute;
+  top: -25px;
+  right: 0;
 }
 
-.fern__img {
-  width: 280px;
+.chef__img::after {
+  content: "";
+  background: red;
+  height: 30px;
+  width: 50px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  display: block;
 }
 
 .one__card {
-  padding: 6rem 2rem 4rem;
+  z-index: -1;
+  margin-top: -95px;
+  padding: 10rem 2rem 4rem;
   background-color: #e6e6e6;
   position: relative;
 }
@@ -194,11 +225,11 @@ nav:hover {
 }
 .one__card__stripes {
   width: 100%;
-  height: 20px;
+  height: 30px;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-image: repeating-linear-gradient(45deg, transparent 0 10px, black 10px 20px);
+  background-image: repeating-linear-gradient(45deg, transparent 0 20px, black 20px 40px);
 }
 
 /*# sourceMappingURL=main.css.map */
