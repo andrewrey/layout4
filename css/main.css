@@ -156,19 +156,27 @@ nav:hover {
 }
 
 .section__wrap {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   max-width: 1200px;
   border: 2px solid yellow;
 }
 
 .one {
-  padding: 10rem 0;
+  padding: 4rem 0;
   border: 2px solid red;
 }
 
+.chef__img {
+  width: 300px;
+}
+
+.fern__img {
+  width: 280px;
+}
+
 .one__card {
-  padding: 8rem 2rem;
+  padding: 6rem 2rem 4rem;
   background-color: #e6e6e6;
   position: relative;
 }
