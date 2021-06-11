@@ -4,6 +4,42 @@
   width: 90%;
   margin: 0 auto;
   max-width: 1200px;
+  border: 2px solid yellow;
 }
 
 //// Section One ///////
+
+.one {
+  padding: 10rem 0;
+  border: 2px solid red;
+}
+
+.one__card {
+  padding: 8rem 2rem;
+  background-color: abstracts.$silver;
+  position: relative;
+  p {
+    margin-bottom: 2rem;
+  }
+  a {
+    background-color: abstracts.$mYellow;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 1rem 0;
+  }
+  &__stripes {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent 0 10px,
+      black 10px 20px
+    );
+  }
+}
