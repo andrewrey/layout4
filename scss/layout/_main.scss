@@ -7,18 +7,15 @@
   }
   margin: 0 auto;
   max-width: 1200px;
-  border: 2px solid yellow;
 }
 
 //// Section One ///////
 
 .one {
   padding: 6rem 0;
-  border: 2px solid red;
 }
 
 .section__one__wrap {
-  border: 2px solid green;
   position: relative;
   max-width: 380px;
   @include abstracts.mq(600px) {
@@ -27,6 +24,7 @@
   @include abstracts.mq(800px) {
     display: flex;
     align-items: center;
+    justify-content: center;
     max-width: 100%;
   }
   margin: 0 auto;
@@ -41,9 +39,10 @@
     top: 21rem;
     left: 0;
     @include abstracts.mq(800px) {
-      width: 40%;
+      width: 430px;
       left: -50px;
-      top: 30rem;
+      top: 38rem;
+      z-index: 6;
     }
   }
 }
@@ -61,16 +60,19 @@
   }
 }
 .chef__img {
+  position: absolute;
+  top: -25px;
+  right: -20px;
   width: 300px;
   @include abstracts.mq(600px) {
     width: 400px;
   }
   @include abstracts.mq(800px) {
-    display: none;
+    z-index: 5;
+    right: initial;
+    left: 35px;
+    top: 125px;
   }
-  position: absolute;
-  top: -25px;
-  right: -20px;
 }
 
 .one__card {
@@ -123,9 +125,9 @@
       left: -55%;
     }
     @include abstracts.mq(800px) {
-      width: 80%;
+      width: 360px;
       top: initial;
-      bottom: -20px;
+      bottom: -30px;
       left: -400px;
     }
     background-image: repeating-linear-gradient(

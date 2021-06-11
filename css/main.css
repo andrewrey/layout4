@@ -159,7 +159,6 @@ nav:hover {
   width: 80%;
   margin: 0 auto;
   max-width: 1200px;
-  border: 2px solid yellow;
 }
 @media (min-width: 600px) {
   .wrap {
@@ -169,11 +168,9 @@ nav:hover {
 
 .one {
   padding: 6rem 0;
-  border: 2px solid red;
 }
 
 .section__one__wrap {
-  border: 2px solid green;
   position: relative;
   max-width: 380px;
   margin: 0 auto;
@@ -188,6 +185,7 @@ nav:hover {
   .section__one__wrap {
     display: flex;
     align-items: center;
+    justify-content: center;
     max-width: 100%;
   }
 }
@@ -203,9 +201,10 @@ nav:hover {
 }
 @media (min-width: 800px) {
   .section__one__wrap::after {
-    width: 40%;
+    width: 430px;
     left: -50px;
-    top: 30rem;
+    top: 38rem;
+    z-index: 6;
   }
 }
 
@@ -227,10 +226,10 @@ nav:hover {
 }
 
 .chef__img {
-  width: 300px;
   position: absolute;
   top: -25px;
   right: -20px;
+  width: 300px;
 }
 @media (min-width: 600px) {
   .chef__img {
@@ -239,7 +238,10 @@ nav:hover {
 }
 @media (min-width: 800px) {
   .chef__img {
-    display: none;
+    z-index: 5;
+    right: initial;
+    left: 35px;
+    top: 125px;
   }
 }
 
@@ -303,9 +305,9 @@ nav:hover {
 }
 @media (min-width: 800px) {
   .one__card__stripes {
-    width: 80%;
+    width: 360px;
     top: initial;
-    bottom: -20px;
+    bottom: -30px;
     left: -400px;
   }
 }
