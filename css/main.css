@@ -172,20 +172,35 @@ main {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 600px) {
+  .one__card {
+    max-width: 600px;
+  }
+}
 .one__card img {
   position: absolute;
 }
 .one__card img.chef__img {
-  width: 90%;
+  width: 300px;
   z-index: 2;
   top: -200px;
   right: 0;
 }
+@media (min-width: 600px) {
+  .one__card img.chef__img {
+    width: 385px;
+  }
+}
 .one__card img.fern__img {
-  width: 82%;
+  width: 310px;
   z-index: 0;
   top: -180px;
   left: 0;
+}
+@media (min-width: 600px) {
+  .one__card img.fern__img {
+    width: 370px;
+  }
 }
 .one__card__text {
   margin-top: auto;

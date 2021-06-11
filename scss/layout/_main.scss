@@ -21,19 +21,28 @@ main {
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
+  @include abstracts.mq(600px) {
+    max-width: 600px;
+  }
 
   img {
     position: absolute;
     // opacity: 0;
 
     &.chef__img {
-      width: 90%;
+      width: 300px;
+      @include abstracts.mq(600px) {
+        width: 385px;
+      }
       z-index: 2;
       top: -200px;
       right: 0;
     }
     &.fern__img {
-      width: 82%;
+      width: 310px;
+      @include abstracts.mq(600px) {
+        width: 370px;
+      }
       z-index: 0;
       top: -180px;
       left: 0;
