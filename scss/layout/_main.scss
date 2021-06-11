@@ -2,6 +2,9 @@
 
 .wrap {
   width: 80%;
+  @include abstracts.mq(600px) {
+    width: 90%;
+  }
   margin: 0 auto;
   max-width: 1200px;
   border: 2px solid yellow;
@@ -15,7 +18,13 @@
 }
 
 .section__one__wrap {
+  border: 2px solid green;
   position: relative;
+  max-width: 380px;
+  @include abstracts.mq(600px) {
+    max-width: 530px;
+  }
+  margin: 0 auto;
   z-index: 0;
   &::after {
     content: "";
@@ -38,17 +47,12 @@
   top: -25px;
   right: -20px;
 }
-.chef__img::after {
-  content: "";
-  background: red;
-  height: 30px;
-  width: 50px;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  display: block;
-}
+
 .one__card {
+  @include abstracts.mq(600px) {
+    width: 70%;
+    margin-left: 200px;
+  }
   z-index: -1;
   margin-top: -95px;
   padding: 10rem 2rem 4rem;
@@ -70,8 +74,13 @@
     width: 100%;
     height: 30px;
     position: absolute;
-    bottom: 0;
+    top: 96%;
     left: 0;
+    @include abstracts.mq(600px) {
+      width: 85%;
+      top: 15%;
+      left: -55%;
+    }
     background-image: repeating-linear-gradient(
       45deg,
       transparent 0 20px,

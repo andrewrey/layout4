@@ -161,6 +161,11 @@ nav:hover {
   max-width: 1200px;
   border: 2px solid yellow;
 }
+@media (min-width: 600px) {
+  .wrap {
+    width: 90%;
+  }
+}
 
 .one {
   padding: 6rem 0;
@@ -168,8 +173,16 @@ nav:hover {
 }
 
 .section__one__wrap {
+  border: 2px solid green;
   position: relative;
+  max-width: 380px;
+  margin: 0 auto;
   z-index: 0;
+}
+@media (min-width: 600px) {
+  .section__one__wrap {
+    max-width: 530px;
+  }
 }
 .section__one__wrap::after {
   content: "";
@@ -193,23 +206,18 @@ nav:hover {
   right: -20px;
 }
 
-.chef__img::after {
-  content: "";
-  background: red;
-  height: 30px;
-  width: 50px;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  display: block;
-}
-
 .one__card {
   z-index: -1;
   margin-top: -95px;
   padding: 10rem 2rem 4rem;
   background-color: #e6e6e6;
   position: relative;
+}
+@media (min-width: 600px) {
+  .one__card {
+    width: 70%;
+    margin-left: 200px;
+  }
 }
 .one__card p {
   margin-bottom: 2rem;
@@ -227,9 +235,16 @@ nav:hover {
   width: 100%;
   height: 30px;
   position: absolute;
-  bottom: 0;
+  top: 96%;
   left: 0;
   background-image: repeating-linear-gradient(45deg, transparent 0 20px, black 20px 40px);
+}
+@media (min-width: 600px) {
+  .one__card__stripes {
+    width: 85%;
+    top: 15%;
+    left: -55%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
