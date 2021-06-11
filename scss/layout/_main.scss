@@ -54,8 +54,7 @@
   }
   @include abstracts.mq(800px) {
     position: relative;
-    flex-shrink: 0;
-    left: 110px;
+    // left: 110px;
     z-index: 1;
   }
 }
@@ -91,7 +90,6 @@
     top: -1rem;
     width: 55%;
     height: 750px;
-    flex-shrink: 0;
     z-index: initial;
   }
   &__text {

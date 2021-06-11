@@ -219,8 +219,6 @@ nav:hover {
 @media (min-width: 800px) {
   .fern {
     position: relative;
-    flex-shrink: 0;
-    left: 110px;
     z-index: 1;
   }
 }
@@ -265,7 +263,6 @@ nav:hover {
     top: -1rem;
     width: 55%;
     height: 750px;
-    flex-shrink: 0;
     z-index: initial;
   }
 }
