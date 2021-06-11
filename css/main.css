@@ -184,6 +184,13 @@ nav:hover {
     max-width: 530px;
   }
 }
+@media (min-width: 800px) {
+  .section__one__wrap {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+  }
+}
 .section__one__wrap::after {
   content: "";
   display: block;
@@ -194,6 +201,13 @@ nav:hover {
   top: 21rem;
   left: 0;
 }
+@media (min-width: 800px) {
+  .section__one__wrap::after {
+    width: 40%;
+    left: -50px;
+    top: 30rem;
+  }
+}
 
 .fern {
   width: 310px;
@@ -201,6 +215,14 @@ nav:hover {
 @media (min-width: 600px) {
   .fern {
     width: 405px;
+  }
+}
+@media (min-width: 800px) {
+  .fern {
+    position: relative;
+    flex-shrink: 0;
+    left: 110px;
+    z-index: 1;
   }
 }
 
@@ -215,6 +237,11 @@ nav:hover {
     width: 400px;
   }
 }
+@media (min-width: 800px) {
+  .chef__img {
+    display: none;
+  }
+}
 
 .one__card {
   z-index: -1;
@@ -227,6 +254,24 @@ nav:hover {
   .one__card {
     width: 70%;
     margin-left: 200px;
+  }
+}
+@media (min-width: 800px) {
+  .one__card {
+    margin: 0;
+    padding: 0 2rem;
+    top: -1rem;
+    width: 55%;
+    height: 750px;
+    flex-shrink: 0;
+    z-index: initial;
+  }
+}
+@media (min-width: 800px) {
+  .one__card__text {
+    position: relative;
+    top: 10rem;
+    z-index: 10;
   }
 }
 .one__card p {
@@ -254,6 +299,14 @@ nav:hover {
     width: 110%;
     top: 15%;
     left: -55%;
+  }
+}
+@media (min-width: 800px) {
+  .one__card__stripes {
+    width: 80%;
+    top: initial;
+    bottom: -20px;
+    left: -400px;
   }
 }
 

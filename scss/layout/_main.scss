@@ -24,6 +24,11 @@
   @include abstracts.mq(600px) {
     max-width: 530px;
   }
+  @include abstracts.mq(800px) {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+  }
   margin: 0 auto;
   z-index: 0;
   &::after {
@@ -35,6 +40,11 @@
     position: absolute;
     top: 21rem;
     left: 0;
+    @include abstracts.mq(800px) {
+      width: 40%;
+      left: -50px;
+      top: 30rem;
+    }
   }
 }
 
@@ -43,11 +53,20 @@
   @include abstracts.mq(600px) {
     width: 405px;
   }
+  @include abstracts.mq(800px) {
+    position: relative;
+    flex-shrink: 0;
+    left: 110px;
+    z-index: 1;
+  }
 }
 .chef__img {
   width: 300px;
   @include abstracts.mq(600px) {
     width: 400px;
+  }
+  @include abstracts.mq(800px) {
+    display: none;
   }
   position: absolute;
   top: -25px;
@@ -55,15 +74,31 @@
 }
 
 .one__card {
-  @include abstracts.mq(600px) {
-    width: 70%;
-    margin-left: 200px;
-  }
   z-index: -1;
   margin-top: -95px;
   padding: 10rem 2rem 4rem;
   background-color: abstracts.$silver;
   position: relative;
+  @include abstracts.mq(600px) {
+    width: 70%;
+    margin-left: 200px;
+  }
+  @include abstracts.mq(800px) {
+    margin: 0;
+    padding: 0 2rem;
+    top: -1rem;
+    width: 55%;
+    height: 750px;
+    flex-shrink: 0;
+    z-index: initial;
+  }
+  &__text {
+    @include abstracts.mq(800px) {
+      position: relative;
+      top: 10rem;
+      z-index: 10;
+    }
+  }
   p {
     margin-bottom: 2rem;
   }
@@ -86,6 +121,12 @@
       width: 110%;
       top: 15%;
       left: -55%;
+    }
+    @include abstracts.mq(800px) {
+      width: 80%;
+      top: initial;
+      bottom: -20px;
+      left: -400px;
     }
     background-image: repeating-linear-gradient(
       45deg,
