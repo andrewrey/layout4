@@ -208,38 +208,40 @@ nav:hover {
   }
 }
 
-.fern {
+.header__img__wrap {
+  position: relative;
+}
+.header__img__wrap .fern {
   width: 310px;
 }
 @media (min-width: 600px) {
-  .fern {
+  .header__img__wrap .fern {
     width: 405px;
   }
 }
 @media (min-width: 800px) {
-  .fern {
+  .header__img__wrap .fern {
     position: relative;
     z-index: 1;
   }
 }
-
-.chef__img {
+.header__img__wrap .chef__img {
   position: absolute;
   top: -25px;
   right: -20px;
   width: 300px;
 }
 @media (min-width: 600px) {
-  .chef__img {
+  .header__img__wrap .chef__img {
     width: 400px;
   }
 }
 @media (min-width: 800px) {
-  .chef__img {
+  .header__img__wrap .chef__img {
     z-index: 5;
     right: initial;
     left: 35px;
-    top: 125px;
+    top: 45px;
   }
 }
 
@@ -271,6 +273,11 @@ nav:hover {
     position: relative;
     top: 10rem;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem;
   }
 }
 .one__card p {
