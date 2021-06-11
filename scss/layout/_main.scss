@@ -1,9 +1,5 @@
 @use '../abstracts';
 
-main {
-  padding: 2rem 0;
-}
-
 .section__wrap {
   width: 90%;
   margin: 0 auto;
@@ -11,58 +7,3 @@ main {
 }
 
 //// Section One ///////
-
-.one__card {
-  background-color: abstracts.$silver;
-  position: relative;
-  height: 750px;
-  max-width: 400px;
-  margin: 15rem auto 0;
-  padding-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  @include abstracts.mq(600px) {
-    max-width: 600px;
-  }
-
-  img {
-    position: absolute;
-    // opacity: 0;
-
-    &.chef__img {
-      width: 300px;
-      @include abstracts.mq(600px) {
-        width: 385px;
-      }
-      z-index: 2;
-      top: -200px;
-      right: 0;
-    }
-    &.fern__img {
-      width: 310px;
-      @include abstracts.mq(600px) {
-        width: 370px;
-      }
-      z-index: 0;
-      top: -180px;
-      left: 0;
-    }
-  }
-  &__text {
-    margin-top: auto;
-    padding: 0 1rem;
-    p {
-      margin-bottom: 2rem;
-    }
-    a {
-      padding: 8px 10px;
-      background-color: abstracts.$mYellow;
-      width: 200px;
-      color: black;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 1.25rem;
-      text-align: center;
-    }
-  }
-}

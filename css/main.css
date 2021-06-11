@@ -152,72 +152,10 @@ nav:hover {
   background: white;
 }
 
-main {
-  padding: 2rem 0;
-}
-
 .section__wrap {
   width: 90%;
   margin: 0 auto;
   max-width: 1200px;
-}
-
-.one__card {
-  background-color: #a4a5ae;
-  position: relative;
-  height: 750px;
-  max-width: 400px;
-  margin: 15rem auto 0;
-  padding-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 600px) {
-  .one__card {
-    max-width: 600px;
-  }
-}
-.one__card img {
-  position: absolute;
-}
-.one__card img.chef__img {
-  width: 300px;
-  z-index: 2;
-  top: -200px;
-  right: 0;
-}
-@media (min-width: 600px) {
-  .one__card img.chef__img {
-    width: 385px;
-  }
-}
-.one__card img.fern__img {
-  width: 310px;
-  z-index: 0;
-  top: -180px;
-  left: 0;
-}
-@media (min-width: 600px) {
-  .one__card img.fern__img {
-    width: 370px;
-  }
-}
-.one__card__text {
-  margin-top: auto;
-  padding: 0 1rem;
-}
-.one__card__text p {
-  margin-bottom: 2rem;
-}
-.one__card__text a {
-  padding: 8px 10px;
-  background-color: #ffe347;
-  width: 200px;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.25rem;
-  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
