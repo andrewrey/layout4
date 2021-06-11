@@ -198,12 +198,22 @@ nav:hover {
 .fern {
   width: 310px;
 }
+@media (min-width: 600px) {
+  .fern {
+    width: 405px;
+  }
+}
 
 .chef__img {
   width: 300px;
   position: absolute;
   top: -25px;
   right: -20px;
+}
+@media (min-width: 600px) {
+  .chef__img {
+    width: 400px;
+  }
 }
 
 .one__card {
