@@ -251,7 +251,7 @@ nav:hover {
 }
 @media (min-width: 600px) {
   .one__card__stripes {
-    width: 85%;
+    width: 110%;
     top: 15%;
     left: -55%;
   }
