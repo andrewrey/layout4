@@ -178,7 +178,7 @@ nav:hover {
   height: 30px;
   background-color: #ffe347;
   position: absolute;
-  top: 20rem;
+  top: 21rem;
   left: 0;
 }
 
@@ -190,7 +190,7 @@ nav:hover {
   width: 300px;
   position: absolute;
   top: -25px;
-  right: 0;
+  right: -20px;
 }
 
 .chef__img::after {
