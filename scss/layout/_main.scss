@@ -38,6 +38,9 @@
     position: absolute;
     top: 21rem;
     left: 0;
+    @include abstracts.mq(600px) {
+      top: 30rem;
+    }
     @include abstracts.mq(800px) {
       width: 430px;
       left: -50px;
