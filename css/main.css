@@ -254,7 +254,7 @@ nav:hover {
   z-index: -1;
   margin-top: -95px;
   padding: 10rem 2rem 4rem;
-  background-color: #e6e6e6;
+  background-color: #c1becf;
   position: relative;
 }
 @media (min-width: 600px) {
@@ -319,6 +319,55 @@ nav:hover {
     bottom: -30px;
     left: -400px;
   }
+}
+
+.flex__wrap {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 800px) {
+  .flex__wrap {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.two {
+  background-color: #465775;
+}
+.two img {
+  width: 60px;
+}
+
+.icon_info {
+  width: 400px;
+  border: 2px solid yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon_info h2 {
+  color: #c1becf;
+}
+.icon_info p {
+  color: white;
+  text-align: center;
+}
+.icon_info .icon__background {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon_info img {
+  display: inline;
 }
 
 /*# sourceMappingURL=main.css.map */
