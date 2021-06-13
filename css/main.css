@@ -394,7 +394,7 @@ nav:hover {
   padding: 2rem 1rem;
 }
 .three .three__info_card h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   position: relative;
 }
 .three .three__info_card h2::after {
@@ -405,6 +405,12 @@ nav:hover {
   bottom: -15px;
   width: 60%;
   background-color: #ffe347;
+}
+.three .three__info_card a {
+  margin-top: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
 }
 
 /*# sourceMappingURL=main.css.map */
