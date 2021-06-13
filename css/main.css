@@ -380,8 +380,21 @@ nav:hover {
 
 .grid__wrap {
   display: grid;
+  width: 75%;
   grid-template-columns: 1fr;
   grid-template-areas: "img1" "list" "img2" "info" "img3";
+}
+@media (min-width: 750px) {
+  .grid__wrap {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img2 img2" "img1 list" "info info" "img3 img3";
+  }
+}
+@media (min-width: 1000px) {
+  .grid__wrap {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "img1 img1 info info" "img3 list img2 img2";
+  }
 }
 
 .three {
