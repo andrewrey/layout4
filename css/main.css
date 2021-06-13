@@ -378,4 +378,18 @@ nav:hover {
   display: inline;
 }
 
+.three {
+  background-color: #ffe347;
+  padding: 4rem 0;
+}
+.three .list1 {
+  background-color: #465775;
+}
+.three .list1 ol {
+  margin: 0;
+}
+.three .three__info_card {
+  background-color: white;
+}
+
 /*# sourceMappingURL=main.css.map */

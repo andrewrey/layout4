@@ -202,3 +202,16 @@
 /// Section 2 End //////
 
 /// Section 3 //////
+.three {
+  background-color: abstracts.$mYellow;
+  padding: 4rem 0;
+  .list1 {
+    ol {
+      margin: 0;
+    }
+    background-color: abstracts.$ind;
+  }
+  .three__info_card {
+    background-color: white;
+  }
+}
