@@ -378,11 +378,27 @@ nav:hover {
   display: inline;
 }
 
+.grid__wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "img1" "list" "img2" "info" "img3";
+}
+
 .three {
   background-color: #ffe347;
   padding: 4rem 0;
 }
+.three .img1 {
+  grid-area: img1;
+}
+.three .img2 {
+  grid-area: img2;
+}
+.three .img3 {
+  grid-area: img3;
+}
 .three .list1 {
+  grid-area: list;
   background-color: #465775;
 }
 .three .list1 ol {
@@ -390,6 +406,7 @@ nav:hover {
   color: white;
 }
 .three .three__info_card {
+  grid-area: info;
   background-color: white;
   padding: 2rem 1rem;
 }

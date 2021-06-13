@@ -202,17 +202,43 @@
 /// Section 2 End //////
 
 /// Section 3 //////
+
+.grid__wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "img1"
+    "list"
+    "img2"
+    "info"
+    "img3";
+}
 .three {
   background-color: abstracts.$mYellow;
   padding: 4rem 0;
+
+  .img1 {
+    grid-area: img1;
+  }
+
+  .img2 {
+    grid-area: img2;
+  }
+
+  .img3 {
+    grid-area: img3;
+  }
   .list1 {
+    grid-area: list;
     ol {
       margin: 0;
       color: white;
     }
     background-color: abstracts.$ind;
   }
+
   .three__info_card {
+    grid-area: info;
     background-color: white;
     padding: 2rem 1rem;
     h2 {
