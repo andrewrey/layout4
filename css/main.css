@@ -392,6 +392,7 @@ nav:hover {
 }
 @media (min-width: 1000px) {
   .grid__wrap {
+    width: 58%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "img1 img1 info info" "img3 list img2 img2";
   }
@@ -409,6 +410,18 @@ nav:hover {
 }
 .three .img3 {
   grid-area: img3;
+}
+@media (min-width: 1000px) {
+  .three .img3 {
+    background-image: url("../../images/food3.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media (min-width: 1000px) {
+  .three .img3 img {
+    display: none;
+  }
 }
 .three .list1 {
   grid-area: list;
