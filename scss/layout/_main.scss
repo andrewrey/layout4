@@ -222,7 +222,8 @@
       "img3 img3";
   }
   @include abstracts.mq(1000px) {
-    width: 58%;
+    width: 69%;
+    max-width: 950px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "img1 img1 info info"
@@ -243,6 +244,10 @@
 
   .img3 {
     grid-area: img3;
+    display: none;
+    @include abstracts.mq(750px) {
+      display: block;
+    }
     @include abstracts.mq(1000px) {
       background-image: url("../../images/food3.jpg");
       background-position: center;
@@ -265,8 +270,14 @@
 
   .three__info_card {
     grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: white;
     padding: 2rem 1rem;
+    @include abstracts.mq(1120px) {
+      padding: 2rem 3rem;
+    }
     h2 {
       margin-bottom: 2.5rem;
       position: relative;
