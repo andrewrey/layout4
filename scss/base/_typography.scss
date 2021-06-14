@@ -34,3 +34,20 @@ html {
     font-size: 1.125rem;
   }
 }
+
+.three {
+  li {
+    font-size: 1.6875rem;
+    font-weight: bold;
+  }
+
+  .three__info_card {
+    h2 {
+      font-size: 2.625rem;
+      font-family: $fjall;
+    }
+    p {
+      font-size: 1.125rem;
+    }
+  }
+}

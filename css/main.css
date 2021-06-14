@@ -103,6 +103,18 @@ html {
   font-size: 1.125rem;
 }
 
+.three li {
+  font-size: 1.6875rem;
+  font-weight: bold;
+}
+.three .three__info_card h2 {
+  font-size: 2.625rem;
+  font-family: "Fjalla One", sans-serif;
+}
+.three .three__info_card p {
+  font-size: 1.125rem;
+}
+
 header {
   background-color: #465775;
   padding-bottom: 0.5rem;
@@ -431,12 +443,20 @@ nav:hover {
   }
 }
 .three .list1 {
+  padding: 2rem 0;
   grid-area: list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #465775;
 }
 .three .list1 ol {
   margin: 0;
   color: white;
+}
+.three .list1 ol li + li {
+  margin-top: 2rem;
 }
 .three .three__info_card {
   grid-area: info;

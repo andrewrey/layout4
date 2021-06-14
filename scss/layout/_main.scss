@@ -260,10 +260,18 @@
     }
   }
   .list1 {
+    padding: 2rem 0;
     grid-area: list;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     ol {
       margin: 0;
       color: white;
+      li + li {
+        margin-top: 2rem;
+      }
     }
     background-color: abstracts.$ind;
   }
