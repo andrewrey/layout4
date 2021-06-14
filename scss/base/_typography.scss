@@ -51,3 +51,32 @@ html {
     }
   }
 }
+
+.four {
+  h2 {
+    font-family: $fjall;
+    font-size: 4.25rem;
+  }
+
+  .four__list {
+    h2 {
+      color: abstracts.$ind;
+    }
+    li {
+      font-size: 1.125rem;
+      font-style: italic;
+    }
+  }
+
+  .four__info_card {
+    h2 {
+      color: abstracts.$silver;
+    }
+
+    p {
+      color: white;
+      font-style: italic;
+      font-size: 1.25rem;
+    }
+  }
+}

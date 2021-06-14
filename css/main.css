@@ -115,6 +115,26 @@ html {
   font-size: 1.125rem;
 }
 
+.four h2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 4.25rem;
+}
+.four .four__list h2 {
+  color: #465775;
+}
+.four .four__list li {
+  font-size: 1.125rem;
+  font-style: italic;
+}
+.four .four__info_card h2 {
+  color: #c1becf;
+}
+.four .four__info_card p {
+  color: white;
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
 header {
   background-color: #465775;
   padding-bottom: 0.5rem;
@@ -532,13 +552,13 @@ nav:hover {
 .four .grid__wrap {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 400px 400px;
+  grid-template-rows: 450px 450px;
   width: 75%;
 }
 @media (min-width: 750px) {
   .four .grid__wrap {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px;
+    grid-template-rows: 450px;
   }
 }
 @media (min-width: 1000px) {
@@ -548,10 +568,18 @@ nav:hover {
   }
 }
 .four .four__list {
+  padding: 0 2rem;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .four .four__info_card {
+  padding: 0 2rem;
   background-color: #465775;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
