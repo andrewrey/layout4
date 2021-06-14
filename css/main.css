@@ -496,4 +496,9 @@ nav:hover {
   background-image: repeating-linear-gradient(45deg, transparent 0 20px, black 20px 40px);
 }
 
+.four {
+  background-color: #ffe347;
+  padding: 4rem 0;
+}
+
 /*# sourceMappingURL=main.css.map */
