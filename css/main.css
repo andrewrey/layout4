@@ -390,20 +390,20 @@ nav:hover {
   display: inline;
 }
 
-.grid__wrap {
+.three .grid__wrap {
   display: grid;
   width: 75%;
   grid-template-columns: 1fr;
   grid-template-areas: "img1" "list" "img2" "info" "img3";
 }
 @media (min-width: 750px) {
-  .grid__wrap {
+  .three .grid__wrap {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "img2 img2" "img1 list" "info info" "img3 img3";
   }
 }
 @media (min-width: 1000px) {
-  .grid__wrap {
+  .three .grid__wrap {
     width: 69%;
     max-width: 950px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -499,6 +499,30 @@ nav:hover {
 .four {
   background-color: #ffe347;
   padding: 4rem 0;
+}
+.four .grid__wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px 400px;
+  width: 75%;
+}
+@media (min-width: 750px) {
+  .four .grid__wrap {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+  }
+}
+@media (min-width: 1000px) {
+  .four .grid__wrap {
+    width: 69%;
+    max-width: 950px;
+  }
+}
+.four .four__list {
+  background-color: white;
+}
+.four .four__info_card {
+  background-color: #465775;
 }
 
 /*# sourceMappingURL=main.css.map */

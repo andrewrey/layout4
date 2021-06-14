@@ -203,7 +203,7 @@
 
 /// Section 3 //////
 
-.grid__wrap {
+.three .grid__wrap {
   display: grid;
   width: 75%;
   grid-template-columns: 1fr;
@@ -325,4 +325,26 @@
 .four {
   background-color: abstracts.$mYellow;
   padding: 4rem 0;
+
+  .grid__wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 400px;
+    width: 75%;
+    @include abstracts.mq(750px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 400px;
+    }
+    @include abstracts.mq(1000px) {
+      width: 69%;
+      max-width: 950px;
+    }
+  }
+
+  .four__list {
+    background-color: white;
+  }
+  .four__info_card {
+    background-color: abstracts.$ind;
+  }
 }
