@@ -418,8 +418,32 @@ nav:hover {
 .three .img1 {
   grid-area: img1;
 }
+@media (min-width: 1000px) {
+  .three .img1 {
+    background-image: url("../../images/food5.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media (min-width: 1000px) {
+  .three .img1 img {
+    display: none;
+  }
+}
 .three .img2 {
   grid-area: img2;
+}
+@media (min-width: 1000px) {
+  .three .img2 {
+    background-image: url("../../images/food2.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media (min-width: 1000px) {
+  .three .img2 img {
+    display: none;
+  }
 }
 .three .img3 {
   grid-area: img3;

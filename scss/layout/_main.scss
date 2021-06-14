@@ -236,10 +236,30 @@
 
   .img1 {
     grid-area: img1;
+    @include abstracts.mq(1000px) {
+      background-image: url("../../images/food5.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+    img {
+      @include abstracts.mq(1000px) {
+        display: none;
+      }
+    }
   }
 
   .img2 {
     grid-area: img2;
+    @include abstracts.mq(1000px) {
+      background-image: url("../../images/food2.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+    img {
+      @include abstracts.mq(1000px) {
+        display: none;
+      }
+    }
   }
 
   .img3 {
