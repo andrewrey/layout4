@@ -222,7 +222,7 @@
       "img3 img3";
   }
   @include abstracts.mq(1000px) {
-    width: 69%;
+    width: 90%;
     max-width: 950px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -281,6 +281,9 @@
   }
   .list1 {
     padding: 2rem 0;
+    @include abstracts.mq(1000px) {
+      padding: 6rem 1rem;
+    }
     grid-area: list;
     display: flex;
     flex-direction: column;
@@ -356,7 +359,7 @@
       grid-template-rows: 400px;
     }
     @include abstracts.mq(1000px) {
-      width: 69%;
+      width: 90%;
       max-width: 950px;
     }
   }

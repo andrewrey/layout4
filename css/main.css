@@ -404,7 +404,7 @@ nav:hover {
 }
 @media (min-width: 1000px) {
   .three .grid__wrap {
-    width: 69%;
+    width: 90%;
     max-width: 950px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "img1 img1 info info" "img3 list img2 img2";
@@ -475,6 +475,11 @@ nav:hover {
   justify-content: center;
   background-color: #465775;
 }
+@media (min-width: 1000px) {
+  .three .list1 {
+    padding: 6rem 1rem;
+  }
+}
 .three .list1 ol {
   margin: 0;
   color: white;
@@ -538,7 +543,7 @@ nav:hover {
 }
 @media (min-width: 1000px) {
   .four .grid__wrap {
-    width: 69%;
+    width: 90%;
     max-width: 950px;
   }
 }
