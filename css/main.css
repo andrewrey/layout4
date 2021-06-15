@@ -578,4 +578,35 @@ nav:hover {
   justify-content: center;
 }
 
+.five {
+  color: white;
+  padding: 4rem 0;
+  background-color: #465775;
+}
+.five .wrap {
+  max-width: 950px;
+}
+.five .mission__card {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.five .mission__card h3 {
+  width: max-content;
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin: 1.5rem 0 2rem;
+}
+.five .mission__card h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 4px;
+  background-color: #ffe347;
+  width: 110%;
+  bottom: 0;
+  right: 0;
+}
+
 /*# sourceMappingURL=main.css.map */

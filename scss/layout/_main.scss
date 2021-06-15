@@ -346,7 +346,7 @@
 
 //// Stripes Div END //////
 
-//// Section Four Start //////@at-root
+//// Section Four Start //////
 .four {
   background-color: abstracts.$mYellow;
   padding: 4rem 0;
@@ -354,7 +354,6 @@
   .grid__wrap {
     display: grid;
     grid-template-columns: 1fr;
-    // grid-template-rows: 450px 450px;
     width: 75%;
     max-width: 500px;
 
@@ -378,5 +377,40 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+
+//// Section four END ////
+
+//// Section five START /////
+
+.five {
+  .wrap {
+    max-width: 950px;
+  }
+  color: white;
+  padding: 4rem 0;
+  background-color: abstracts.$ind;
+  .mission__card {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    h3 {
+      width: max-content;
+      position: relative;
+      padding-bottom: 0.5rem;
+      margin: 1.5rem 0 2rem;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 4px;
+        background-color: abstracts.$mYellow;
+        width: 110%;
+        bottom: 0;
+        right: 0;
+      }
+    }
   }
 }
