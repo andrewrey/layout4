@@ -396,8 +396,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    p + p {
+      margin-top: 1rem;
+    }
     h3 {
-      width: max-content;
       position: relative;
       padding-bottom: 0.5rem;
       margin: 0 0 1rem;
@@ -407,7 +409,7 @@
         position: absolute;
         height: 4px;
         background-color: abstracts.$mYellow;
-        width: 110%;
+        width: 100%;
         bottom: 0;
         right: 0;
       }
@@ -420,7 +422,10 @@
     h2 {
       margin-bottom: 1rem;
     }
-    padding: 1rem;
+    padding: 6rem 1rem;
+    @include abstracts.mq(750px) {
+      padding: 1rem;
+    }
     display: flex;
     flex-direction: column;
     justify-content: center;

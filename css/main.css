@@ -612,8 +612,10 @@ nav:hover {
   flex-direction: column;
   align-items: flex-end;
 }
+.five .mission__card p + p {
+  margin-top: 1rem;
+}
 .five .mission__card h3 {
-  width: max-content;
   position: relative;
   padding-bottom: 0.5rem;
   margin: 0 0 1rem;
@@ -624,19 +626,24 @@ nav:hover {
   position: absolute;
   height: 4px;
   background-color: #ffe347;
-  width: 110%;
+  width: 100%;
   bottom: 0;
   right: 0;
 }
 
 .six .six__info_card {
-  padding: 1rem;
+  padding: 6rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .six .six__info_card h2 {
   margin-bottom: 1rem;
+}
+@media (min-width: 750px) {
+  .six .six__info_card {
+    padding: 1rem;
+  }
 }
 .six .wrap {
   width: 100%;
