@@ -414,3 +414,15 @@
     }
   }
 }
+
+.six {
+  .wrap {
+    width: 100%;
+    max-width: initial;
+    display: grid;
+    grid-template-columns: 1fr;
+    @include abstracts.mq(750px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
