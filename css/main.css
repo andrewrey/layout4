@@ -146,6 +146,15 @@ html {
   font-family: "Fjalla One", sans-serif;
 }
 
+.six h2 {
+  font-size: 2.875rem;
+  font-family: "Fjalla One", sans-serif;
+  color: #465775;
+}
+.six p {
+  font-size: 1.125rem;
+}
+
 header {
   background-color: #465775;
   padding-bottom: 0.5rem;
@@ -620,6 +629,15 @@ nav:hover {
   right: 0;
 }
 
+.six .six__info_card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.six .six__info_card h2 {
+  margin-bottom: 1rem;
+}
 .six .wrap {
   width: 100%;
   max-width: initial;
@@ -629,6 +647,40 @@ nav:hover {
 @media (min-width: 750px) {
   .six .wrap {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 750px) {
+  .six .wrap .lower2 {
+    background-image: url("../../images/lower2.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media (min-width: 750px) {
+  .six .wrap .lower2 img {
+    display: none;
+  }
+}
+@media (min-width: 750px) {
+  .six .wrap .lower3 {
+    background-image: url("../../images/lower3.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media (min-width: 977px) {
+  .six .wrap .lower3 {
+    background: initial;
+  }
+}
+@media (min-width: 750px) {
+  .six .wrap .lower3 img {
+    display: none;
+  }
+}
+@media (min-width: 977px) {
+  .six .wrap .lower3 img {
+    display: block;
   }
 }
 

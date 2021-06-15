@@ -416,6 +416,16 @@
 }
 
 .six {
+  .six__info_card {
+    h2 {
+      margin-bottom: 1rem;
+    }
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .wrap {
     width: 100%;
     max-width: initial;
@@ -423,6 +433,36 @@
     grid-template-columns: 1fr;
     @include abstracts.mq(750px) {
       grid-template-columns: 1fr 1fr 1fr;
+    }
+    .lower2 {
+      @include abstracts.mq(750px) {
+        background-image: url("../../images/lower2.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+      img {
+        @include abstracts.mq(750px) {
+          display: none;
+        }
+      }
+    }
+    .lower3 {
+      @include abstracts.mq(750px) {
+        background-image: url("../../images/lower3.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+      @include abstracts.mq(977px) {
+        background: initial;
+      }
+      img {
+        @include abstracts.mq(750px) {
+          display: none;
+        }
+        @include abstracts.mq(977px) {
+          display: block;
+        }
+      }
     }
   }
 }
