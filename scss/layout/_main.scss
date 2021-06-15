@@ -2,6 +2,7 @@
 
 .wrap {
   width: 80%;
+
   @include abstracts.mq(600px) {
     width: 90%;
   }
@@ -292,6 +293,7 @@
     ol {
       margin: 0;
       color: white;
+      padding: 0;
       li + li {
         margin-top: 2rem;
       }
@@ -352,27 +354,26 @@
   .grid__wrap {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 450px 450px;
+    // grid-template-rows: 450px 450px;
     width: 75%;
-    @include abstracts.mq(750px) {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 450px;
-    }
+    max-width: 500px;
+
     @include abstracts.mq(1000px) {
+      grid-template-columns: 1fr 1fr;
       width: 90%;
       max-width: 950px;
     }
   }
 
   .four__list {
-    padding: 0 2rem;
+    padding: 2rem;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .four__info_card {
-    padding: 0 2rem;
+    padding: 2rem;
     background-color: abstracts.$ind;
     display: flex;
     flex-direction: column;
