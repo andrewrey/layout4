@@ -70,7 +70,7 @@ html {
 
   .four__info_card {
     h2 {
-      color: abstracts.$silver;
+      color: white;
     }
 
     p {
@@ -78,5 +78,18 @@ html {
       font-style: italic;
       font-size: 1.25rem;
     }
+  }
+}
+
+.five {
+  h2 {
+    text-transform: uppercase;
+    font-size: 1.625rem;
+  }
+  h3 {
+    font-size: 3.625rem;
+    color: abstracts.$silver;
+    text-transform: capitalize;
+    font-family: $fjall;
   }
 }

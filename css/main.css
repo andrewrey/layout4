@@ -127,12 +127,23 @@ html {
   font-style: italic;
 }
 .four .four__info_card h2 {
-  color: #c1becf;
+  color: white;
 }
 .four .four__info_card p {
   color: white;
   font-style: italic;
   font-size: 1.25rem;
+}
+
+.five h2 {
+  text-transform: uppercase;
+  font-size: 1.625rem;
+}
+.five h3 {
+  font-size: 3.625rem;
+  color: #cbd0e9;
+  text-transform: capitalize;
+  font-family: "Fjalla One", sans-serif;
 }
 
 header {
@@ -294,7 +305,7 @@ nav:hover {
   z-index: -1;
   margin-top: -95px;
   padding: 10rem 2rem 4rem;
-  background-color: #c1becf;
+  background-color: #cbd0e9;
   position: relative;
 }
 @media (min-width: 600px) {
@@ -390,7 +401,7 @@ nav:hover {
   justify-content: center;
 }
 .icon_info h2 {
-  color: #c1becf;
+  color: #cbd0e9;
   margin: 0.5rem;
 }
 .icon_info p {
@@ -596,7 +607,7 @@ nav:hover {
   width: max-content;
   position: relative;
   padding-bottom: 0.5rem;
-  margin: 1.5rem 0 2rem;
+  margin: 0 0 1rem;
 }
 .five .mission__card h3::after {
   content: "";
