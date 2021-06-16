@@ -104,3 +104,21 @@ html {
     font-size: 1.125rem;
   }
 }
+
+.seven {
+  h3 {
+    font-family: $fjall;
+    font-size: 3.625rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+
+  a {
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+  }
+}
