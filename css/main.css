@@ -691,4 +691,37 @@ nav:hover {
   }
 }
 
+.seven {
+  color: #465775;
+  padding: 4rem 0;
+  background-color: #ffe347;
+}
+.seven .wrap {
+  max-width: 950px;
+}
+.seven .mission__card {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.seven .mission__card h3 {
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin: 0 0 1rem;
+}
+.seven .mission__card h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 4px;
+  background-color: #465775;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+}
+.seven .mission__card p {
+  color: black;
+}
+
 /*# sourceMappingURL=main.css.map */
