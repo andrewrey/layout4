@@ -802,4 +802,14 @@ nav:hover {
   color: black;
 }
 
+footer {
+  height: 10vh;
+  background-color: #252525;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /*# sourceMappingURL=main.css.map */
