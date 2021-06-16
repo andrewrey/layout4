@@ -170,6 +170,25 @@ html {
   margin-top: 1.5rem;
 }
 
+.eight {
+  background-color: #465775;
+  padding: 4rem 0;
+}
+.eight .wrap {
+  max-width: 550px;
+}
+.eight .wrap form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.eight .wrap form input {
+  width: 100%;
+}
+.eight .wrap form textarea {
+  width: 80%;
+}
+
 header {
   background-color: #465775;
   padding-bottom: 0.5rem;
