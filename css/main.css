@@ -182,11 +182,36 @@ html {
   flex-direction: column;
   align-items: flex-start;
 }
+.eight .wrap form ::placeholder {
+  padding-left: 0.625rem;
+  font-size: 1.2rem;
+}
 .eight .wrap form input {
   width: 100%;
+  padding: 1rem 1.25rem;
+}
+.eight .wrap form input + input {
+  margin-top: 1rem;
 }
 .eight .wrap form textarea {
-  width: 80%;
+  padding: 1rem 1.25rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+.eight .wrap form textarea ::placeholder {
+  padding-left: 0.625rem;
+}
+@media (min-width: 550px) {
+  .eight .wrap form textarea {
+    width: 80%;
+  }
+}
+.eight .wrap form button {
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  background-color: #ffe347;
+  font-size: 1.125rem;
 }
 
 header {
