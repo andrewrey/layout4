@@ -444,7 +444,7 @@
     }
     .lower2 {
       @include abstracts.mq(750px) {
-        background-image: url("/images/lower2.jpg");
+        background-image: url("../images/lower2.jpg");
         background-position: center;
         background-size: cover;
       }
