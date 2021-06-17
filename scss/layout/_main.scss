@@ -238,7 +238,7 @@
   .img1 {
     grid-area: img1;
     @include abstracts.mq(1000px) {
-      background-image: url("/images/food5.jpg");
+      background-image: url("../images/food5.jpg");
       background-position: center;
       background-size: cover;
     }
@@ -252,7 +252,7 @@
   .img2 {
     grid-area: img2;
     @include abstracts.mq(1000px) {
-      background-image: url("/images/food2.jpg");
+      background-image: url("../images/food2.jpg");
       background-position: center;
       background-size: cover;
     }
@@ -270,7 +270,7 @@
       display: block;
     }
     @include abstracts.mq(1000px) {
-      background-image: url("/images/food3.jpg");
+      background-image: url("../images/food3.jpg");
       background-position: center;
       background-size: cover;
     }
@@ -456,7 +456,7 @@
     }
     .lower3 {
       @include abstracts.mq(750px) {
-        background-image: url("/images/lower3.jpg");
+        background-image: url("../images/lower3.jpg");
         background-position: center;
         background-size: cover;
       }

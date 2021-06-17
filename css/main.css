@@ -538,7 +538,7 @@ nav:hover {
 }
 @media (min-width: 1000px) {
   .three .img1 {
-    background-image: url("/images/food5.jpg");
+    background-image: url("../images/food5.jpg");
     background-position: center;
     background-size: cover;
   }
@@ -553,7 +553,7 @@ nav:hover {
 }
 @media (min-width: 1000px) {
   .three .img2 {
-    background-image: url("/images/food2.jpg");
+    background-image: url("../images/food2.jpg");
     background-position: center;
     background-size: cover;
   }
@@ -574,7 +574,7 @@ nav:hover {
 }
 @media (min-width: 1000px) {
   .three .img3 {
-    background-image: url("/images/food3.jpg");
+    background-image: url("../images/food3.jpg");
     background-position: center;
     background-size: cover;
   }
@@ -748,7 +748,7 @@ nav:hover {
 }
 @media (min-width: 750px) {
   .six .wrap .lower3 {
-    background-image: url("/images/lower3.jpg");
+    background-image: url("../images/lower3.jpg");
     background-position: center;
     background-size: cover;
   }
